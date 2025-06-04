@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>반응속도 게임</title>
+    <style>
+        body { background: #f7f7f7; font-family: 'Noto Sans KR', sans-serif; }
+        .container {
+            width: 400px; margin: 60px auto; background: #fff;
+            border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 32px; text-align: center;
+        }
+        #startBtn, #clickBtn {
+            font-size: 1.3rem; padding: 18px 40px; border-radius: 8px;
+            border: none; margin: 16px 0; cursor: pointer;
+        }
+        #clickBtn { background: #ff7675; color: #fff; display: none; }
+        #startBtn { background: #0984e3; color: #fff; }
+        #msg { font-size: 1.2rem; margin: 18px 0; min-height: 2em; }
+        #result { font-size: 1.1rem; color: #636e72; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>반응속도 게임</h2>
+        <div id="msg">아래 버튼을 눌러 시작하세요!</div>
+        <button id="startBtn">게임 시작</button>
+        <button id="clickBtn">지금 클릭!</button>
+        <div id="result"></div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
